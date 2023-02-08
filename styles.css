@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  font-size: 0.935rem;
+  color: var(--very-dark-blue);
+  background: var(--very-light-gray);
+}
+
+h1 span {
+  font-weight: 200;
+}
+
+span::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.header {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+p {
+  line-height: 1.7;
+  color: var(--grayish-blue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.middle-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+@media (min-width: 40rem) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .middle-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+  }
+}
+
+@media (max-width: 39rem) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.header p {
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.card {
+  max-width: 350px;
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+img {
+  margin-left: auto;
+}
+
+.card p {
+  padding-bottom: 2rem;
+}
+
+.supervisor-card {
+  border-top: 3px solid var(--cyan);
+}
+
+.builder-card {
+  border-top: 3px solid var(--red);
+}
+
+.karma-card {
+  border-top: 3px solid var(--orange);
+}
+
+.calculator-card {
+  border-top: 3px solid var(--blue);
+}
